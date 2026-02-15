@@ -51,18 +51,44 @@
             </Internal_Reference>
         </Investigation_Area>
         <Observing_System>
-            <name>Observing System for Mercury</name>
             <Observing_System_Component>
                 <name>Mercury Magnetospheric Orbiter</name>
                 <type>Host</type>
                 <description>Mercury Magnetospheric Orbitor</description>
+                <Internal_Reference>
+                    <lid_reference>urn:jaxa:darts:context:instrument_host:spacecraft.mmo</lid_reference>
+                    <reference_type>is_instrument_host</reference_type>
+                </Internal_Reference>
+            </Observing_System_Component>
+            <Observing_System_Component>
+                <name>MPPE</name>
+                <type>Instrument</type>
+                <Internal_Reference>
+                    <lid_reference>urn:jaxa:darts:context:instrument:mmo.mppe</lid_reference>
+                    <reference_type>is_instrument</reference_type>
+                </Internal_Reference>
             </Observing_System_Component>
         </Observing_System>
         <Target_Identification>
             <name>Mercury</name>
-            <type>data_to_target</type>
+            <type>Planet</type>
+            <Internal_Reference>
+                <lid_reference>urn:nasa:pds:context:target:planet.mercury</lid_reference>
+                <reference_type>data_to_target</reference_type>
+            </Internal_Reference>
         </Target_Identification>
-        <Mission_Area></Mission_Area>
+        <Mission_Area>
+            <psa:Mission_Information>
+                <psa:Mission_Phase>
+                    <psa:name>Mercury Gravity Assist 1</psa:name>
+                    <psa:id>mga1</psa:id>
+                </psa:Mission_Phase>
+            </psa:Mission_Information>
+            <psa:Processing_Context>
+                <psa:processing_software_title>MEA_L1_to_L2P</psa:processing_software_title>
+                <psa:processing_software_version>0.0</psa:processing_software_version>
+            </psa:Processing_Context>
+        </Mission_Area>
         <Discipline_Area>
         </Discipline_Area>
     </Observation_Area>
